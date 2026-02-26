@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../VinterWU"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "springWU"
+	}
+}
