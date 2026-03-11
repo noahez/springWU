@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../Desktop/webbutveckling/js-demo-ovning-template21/js-demo-ovning-template21"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "springWU"
+	}
+}
