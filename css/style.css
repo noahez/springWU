@@ -1,5 +1,6 @@
 body {
     height: 100vh;
+    width: 100vw;
     margin: 0px;
     overflow: hidden;
 }
@@ -11,41 +12,70 @@ body {
     grid: 65px 40px 1fr/ 1fr;
 
 }
+#wrapper2 {
+    height: 100%;
+    display: grid;
+    grid: 65px 40px 1fr/ 1fr;
+
+}
+#wrapper3 {
+    height: 100%;
+    display: grid;
+    grid: 65px 40px 1fr/ 1fr;
+
+}
+#wrapper4 {
+    height: 100%;
+    display: grid;
+    grid: 65px 40px 1fr/ 1fr;
+
+}
 
 header img {
-    width: 100px;
+    width: minmax(10px ,100px);
 }
 
 header {
     grid-column: 1/2;
     grid-row: 1/2;
     display: flex;
-    background-color:slategray;
+    background-color: slategray;
     width: 100%;
     height: 100px;
     z-index: 1;
 }
 
+.pagelink {
+    position: relative;
+    height: 22px;
+    width: (min-content + 10px);
+    background-color: #999999;
+    border-radius: 3px;
+}
+
 section {
     grid-column: 1/2;
     grid-row: 2/3;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     width: 100%;
     height: 40px;
     z-index: 1;
 }
 
-main { 
+main {
     background-color: lightgray;
     overflow-y: scroll;
     grid-row: 1/4;
     grid-column: 1/2;
     height: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-   
+    overflow-x: hidden;
+    
+
 }
 
 .movies {
@@ -59,9 +89,6 @@ main {
 .movies img {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-}
-
-.movies img {
     width: 225px;
     height: 323px;
 }
@@ -70,7 +97,10 @@ nav {
     display: flex;
     position: sticky;
     justify-content: center;
-width: 100%;
+    flex-wrap: wrap;
+    width: min-content;
+    gap: 15px;
+    padding-left: 50px;
 }
 
 nav input[type=text] {
@@ -90,25 +120,30 @@ footer {
     background-color: darkorchid;
 }
 
-.hover{
+.hover {
     position: absolute;
     width: 100%;
     height: 100px;
     opacity: 1;
 
 }
-.outside{
-    width: 500px;
-    height: 25px;
+
+.outside {
+    width: min-content;
+    height: 15vh;
     position: fixed;
-    top: 0;
-    left: -90vw;
+    top: 10vh;
+    left: -900vw;
     transition: left 0.3s;
-    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
     z-index: 10;
+    background-color: slategray;
+    border-radius: 25px;
+
 }
-.Search{
-    width: 500px;
+
+.Search {
+    width: minmax(500px,50vw );
     height: 25px;
     border-radius: 15px;
     padding: 6px;
@@ -117,26 +152,28 @@ footer {
     margin-right: 16px;
     font-size: 17px;
     /* position: fixed; */
-   
+
     transition: top 0.3s;
-    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
     z-index: 10;
-    
+
 }
-.outside.show{
-    left: 0;
+
+.outside.show {
+    left: 1vw;
 }
-.fade-layer{
+
+.fade-layer {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     display: none;
     z-index: 5;
 }
 
-.fade-layer.visible{
+.fade-layer.visible {
     display: block;
 }
