@@ -10,3 +10,4 @@ function showsearch(){
     let fade = document.querySelector(".fade-layer");
     fade.classList.toggle("visible");
 }
+

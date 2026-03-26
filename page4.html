@@ -4,6 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <link rel="stylesheet" href="css/style.css">
+     <style>
+    #th4{
+      background-image: url('img/trashbackgrund.jpg');
+      background-size: cover;
+    }
+     </style>
 </head>
 <body>
      <aside class="outside"><p>Anything in perticulor your looking for?</p>
@@ -12,7 +18,7 @@
   <div id="wrapper4">
     <div class="hover"> 
     </div>
-    <main>
+    <main id="th4">
       <header><img src="img/trashstaden.png" alt="TrashStadens logga">
         <h1>TrashStaden</h1>
         
@@ -22,8 +28,30 @@
 <div class="pagelink"><a href="page3.html">link</a></div>
         </nav>
       </header>
+      <section id="signup">
+        <h1>Sign up</h1>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <div class="loginloder">
+        <button id="myBtn" onclick="setTimeout(MyFunction, 3000)">login</button>
+              <div id="myDropdown" class="loader" > <p>fetching</p><p>please wait...</p></div>
+</div>
+      </section>
+
       </main>
       </div>
         <script src="js\main.js"></script>
+        <script>
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("myBtn").onclick = function() {myFunction()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+function MyFunction(){
+  alert('Error')
+}
+        </script>
 </body>
 </html>
