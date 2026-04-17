@@ -219,8 +219,56 @@ footer {
     
 }
 #signup input{
+    margin: 2.5px;
+    align-self: center;
     height: min-content;
+    width: 50%;
 }
+html {
+  font-family: sans-serif;
+}
+#acualmain{
+    background: #999999;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.lookinici{
+    
+    background: #cccccc;
+  margin-bottom: 10px ;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+
+
+
+
+.lookinici p {
+  line-height: 32px;
+  padding-left: 10px;
+}
+
+
+.label
+{
+  background-color: #7f9ccb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px ridge black;
+  height: auto;
+  width: min-content;
+}
+
+.lookinici .label:hover
+{
+  background-color: #2d5ba3;
+  color: white;
+}
+
+
+
 
 /* mobil css */
 
@@ -229,20 +277,8 @@ footer {
 #aboutmain{
     display: grid;
     grid: 1fr/ 33% 33% 33% 100px;
+}   
 }
-
-
-
-
-    
-}
-
-
-
-
-
-
-
 /* desktop bara  */
 @media screen  and (min-width:501px){
 
