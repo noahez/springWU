@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,39 +20,28 @@
     <div class="hover"> 
     </div>
     <main id="th4">
+      <div class="filler"></div>
       <header><img src="img/trashstaden.png" alt="TrashStadens logga">
         <h1>TrashStaden</h1>
         
         <nav> <input type="text" placeholder="Search...">
-<div class="pagelink"><a href="index.html">link</a></div>
-<div class="pagelink"><a href="page2.html">link</a></div>
-<div class="pagelink"><a href="page3.html">link</a></div>
+<div class="pagelink"><a href="index.html">Home</a></div>
+<div class="pagelink"><a href="page2.html">Got a sugestion</a></div>
+<div class="pagelink"><a href="page3.html">About us</a></div>
         </nav>
       </header>
       <section id="signup">
-        <h1>Sign up</h1>
+        <h2>Sign up</h2>
         <input type="email" placeholder="Email">
         <input type="password" placeholder="Password">
         <div class="loginloder">
-        <button id="myBtn" onclick="setTimeout(MyFunction, 3000)">login</button>
+        <button id="myBtn">login</button>
               <div id="myDropdown" class="loader" > <p>fetching</p><p>please wait...</p></div>
 </div>
       </section>
 
       </main>
       </div>
-        <script src="js\main.js"></script>
-        <script>
-// Get the button, and when the user clicks on it, execute myFunction
-document.getElementById("myBtn").onclick = function() {myFunction()};
-
-/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-function MyFunction(){
-  alert('Error')
-}
-        </script>
+        <script src="js/main.js"></script>
 </body>
 </html>
